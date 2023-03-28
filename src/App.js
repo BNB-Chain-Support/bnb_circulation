@@ -1,22 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+
+import PieChart from './components/PieChart';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p> BNB Circulation Details Page!</p>
+        <p> COMING SOON..!!</p>
+        <div>
+          <PieChart></PieChart>
+        </div>
       </header>
     </div>
   );

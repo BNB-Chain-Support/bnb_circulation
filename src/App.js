@@ -1,6 +1,6 @@
 import './App.css';
 
-import PieChart from './components/PieChart';
+import DoughnutChart from './components/DoughnutChart';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <p> BNB Circulation Details Page!</p>
         <p> COMING SOON..!!</p>
         <div>
-          <PieChart></PieChart>
+          <DoughnutChart></DoughnutChart>
         </div>
       </header>
     </div>

@@ -9,10 +9,8 @@ const DoughnutChart = ({ dataArrProp, textArrProp }) => {
     return (
         <React.Fragment>
             <div className="container-fluid">
-                <h3> Pie Chart </h3>
                 <div className="row">
                     <div className="col-md-5 mb-3">
-
 
                         <Doughnut
                             width={500}
@@ -70,7 +68,6 @@ const DoughnutChart = ({ dataArrProp, textArrProp }) => {
                             }}
 
                         />
-
 
                     </div>
                 </div>

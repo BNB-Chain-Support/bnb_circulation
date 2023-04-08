@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bnb_circulation/static/css/main.e3878053.css",
-    "main.js": "/bnb_circulation/static/js/main.9d3ec4d9.js",
+    "main.js": "/bnb_circulation/static/js/main.696c76d3.js",
     "index.html": "/bnb_circulation/index.html",
     "main.e3878053.css.map": "/bnb_circulation/static/css/main.e3878053.css.map",
-    "main.9d3ec4d9.js.map": "/bnb_circulation/static/js/main.9d3ec4d9.js.map"
+    "main.696c76d3.js.map": "/bnb_circulation/static/js/main.696c76d3.js.map"
   },
   "entrypoints": [
     "static/css/main.e3878053.css",
-    "static/js/main.9d3ec4d9.js"
+    "static/js/main.696c76d3.js"
   ]
 }

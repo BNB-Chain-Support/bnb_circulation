@@ -16,13 +16,16 @@ const Home = () => {
     const [communityBurn, setCommunityBurn] = useState(0);
 
     useEffect(() => {
+        const bnbBurnProxyServerHost = process.env.REACT_APP_BNB_BURN_PROXY_SERVER_HOST;
+        const bnbBurnProxyServerPort = process.env.REACT_APP_BNB_BURN_PROXY_SERVER_PORT;
+
         const getData = async () => {
             try {
                 //  Get BSC and BC Supply
                 /**
                  * const bscBcSupplyReqData = await fetch("https://www.bnbburn.info/api/getBnbSupply",);
                  */
-                const bscBcSupplyReqData = await fetch("http://localhost:4000/bsc_bc_supply",);
+                const bscBcSupplyReqData = await fetch(`http://${bnbBurnProxyServerHost}:${bnbBurnProxyServerPort}/bsc_bc_supply`,);
                 const bscBcSupplyResData = await bscBcSupplyReqData.json();
                 console.log("bscBcSupplyResData: ", bscBcSupplyResData);
 
@@ -30,14 +33,14 @@ const Home = () => {
                 /**
                  * const realTimeBurnReqData = await fetch("https://www.bnbburn.info/api/getRealTimeBurnInfo");
                  */
-                const realTimeBurnReqData = await fetch("http://localhost:4000/real_time_burn_info");
+                const realTimeBurnReqData = await fetch(`http://${bnbBurnProxyServerHost}:${bnbBurnProxyServerPort}/real_time_burn_info`);
                 const realTimeBurnResData = await realTimeBurnReqData.json();
 
                 //  Get all Quarterly Burns
                 /**
                  * const quarterlyBurnReqData = await fetch("https://www.bnbburn.info/api/getQuarterBurns");
                  */
-                const quarterlyBurnReqData = await fetch("http://localhost:4000/quarter_burns");
+                const quarterlyBurnReqData = await fetch(`http://${bnbBurnProxyServerHost}:${bnbBurnProxyServerPort}/quarter_burns`);
                 const quarterlyBurnResData = await quarterlyBurnReqData.json();
 
                 //  Cal. Scheduled Burn by adding all quarterly burns

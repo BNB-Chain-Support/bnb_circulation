@@ -19,15 +19,25 @@ const Home = () => {
         const getData = async () => {
             try {
                 //  Get BSC and BC Supply
-                const bscBcSupplyReqData = await fetch("https://www.bnbburn.info/api/getBnbSupply",);
+                /**
+                 * const bscBcSupplyReqData = await fetch("https://www.bnbburn.info/api/getBnbSupply",);
+                 */
+                const bscBcSupplyReqData = await fetch("http://localhost:4000/bsc_bc_supply",);
                 const bscBcSupplyResData = await bscBcSupplyReqData.json();
+                console.log("bscBcSupplyResData: ", bscBcSupplyResData);
 
                 //  Get Real-time burn
-                const realTimeBurnReqData = await fetch("https://www.bnbburn.info/api/getRealTimeBurnInfo");
+                /**
+                 * const realTimeBurnReqData = await fetch("https://www.bnbburn.info/api/getRealTimeBurnInfo");
+                 */
+                const realTimeBurnReqData = await fetch("http://localhost:4000/real_time_burn_info");
                 const realTimeBurnResData = await realTimeBurnReqData.json();
 
                 //  Get all Quarterly Burns
-                const quarterlyBurnReqData = await fetch("https://www.bnbburn.info/api/getQuarterBurns");
+                /**
+                 * const quarterlyBurnReqData = await fetch("https://www.bnbburn.info/api/getQuarterBurns");
+                 */
+                const quarterlyBurnReqData = await fetch("http://localhost:4000/quarter_burns");
                 const quarterlyBurnResData = await quarterlyBurnReqData.json();
 
                 //  Cal. Scheduled Burn by adding all quarterly burns

@@ -9,7 +9,7 @@ function App() {
         <div>
           <Home></Home>
           <p>
-            To learn more, click <a href="https://www.bnbburn.info/" target="_blank">here</a><br />
+            To learn more, click <a href="https://www.bnbburn.info/" target="_blank" rel="noopener noreferrer">here</a><br />
           </p>
         </div>
       </header>

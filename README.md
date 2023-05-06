@@ -8,6 +8,7 @@ Webpage/Tool for details regarding BNB circulation
     -   NPM (Node package manager)
     -   IDE (Eg: VS Code)
     -   GIT
+    -   BNB Burn Proxy Server should be running
 
 ## Setup Steps
 

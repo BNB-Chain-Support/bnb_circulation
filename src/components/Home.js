@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-// import { Doughnut } from 'react-chartjs-2';
 import SimpleCard from "./SimpleCard";
 import DoughnutChart from "./DoughnutChart";
 import { toFixed } from "../utils/utils";
@@ -27,7 +26,6 @@ const Home = () => {
                  */
                 const bscBcSupplyReqData = await fetch(`http://${bnbBurnProxyServerHost}:${bnbBurnProxyServerPort}/bsc_bc_supply`,);
                 const bscBcSupplyResData = await bscBcSupplyReqData.json();
-                console.log("bscBcSupplyResData: ", bscBcSupplyResData);
 
                 //  Get Real-time burn
                 /**
